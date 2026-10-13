@@ -33,7 +33,8 @@ public class Ejercicio3 {
             System.out.print("Ingrese una opcion: ");
             op = sc.nextInt();
             sc.nextLine();     
-            
+            int i;
+
             
             switch(op){
                 case 1:
@@ -41,7 +42,7 @@ public class Ejercicio3 {
                     n = sc.nextInt();
                     sc.nextLine();
                     libros = new Libro[n];
-                    for (int i = 0; i < n; i++) {
+                    for (i = 0; i < n; i++) {
                         System.out.println("Libro " + (i + 1));
                         System.out.print("Titulo: ");
                         String titulo = sc.nextLine();
@@ -61,7 +62,6 @@ public class Ejercicio3 {
                 case 2:
                     System.out.print("Ingrese el nombre del libro a prestar: ");
                     String tituloprestar = sc.nextLine();
-                    int i;
                     for ( i = 0; i < n; i++) {
                         if (libros[i].titulo.equalsIgnoreCase(tituloprestar)) {
                             libros[i].prestar();
