@@ -15,11 +15,10 @@ public class Ejercicio1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         int op;
-       
         CuentaBancaria cuenta = null;
+        
         do{
             System.out.println("Mostrar Menu");
             System.out.println("1. Crear Cuenta");
@@ -30,8 +29,7 @@ public class Ejercicio1 {
             System.out.print("Selecciona una opcion: ");
             op = sc.nextInt();
             sc.nextLine();
-            
-            
+
             switch(op){
                 
                 case 1:
